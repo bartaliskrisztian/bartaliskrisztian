@@ -1,5 +1,4 @@
 import Grid from "@mui/material/Grid/Grid";
-import Link from "@mui/material/Link/Link";
 import Typography from "@mui/material/Typography/Typography";
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -9,6 +8,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Fade from 'react-reveal/Fade';
 
 const styles = {
+  link: {
+    textDecoration: 'none',
+    color: '#fff'
+  },
   icon: {
     width: '100%',
     height: 40,
@@ -32,29 +35,29 @@ export const Contact = () => (
       </Grid>
       <Grid container pt={3} rowSpacing={2} columnSpacing={2}>
         <Grid item>
-          <Link href='mailto:bartaliskrisztian4@gmail.com'>
+          <a style={styles.link} target="_blank" rel="noreferrer" href='mailto:bartaliskrisztian4@gmail.com'>
             <EmailIcon style={styles.icon} />
-          </Link>
+          </a>
         </Grid>
         <Grid item>
-          <Link href='https://github.com/bartaliskrisztian'>
+          <a style={styles.link} target="_blank" rel="noreferrer" href='https://github.com/bartaliskrisztian'>
             <GitHubIcon style={styles.icon} />
-          </Link>
+          </a>
         </Grid>
         <Grid item>
-          <Link href='https://www.facebook.com/bartalis.krisztian'>
+          <a style={styles.link} target="_blank" rel="noreferrer" href='https://www.facebook.com/bartalis.krisztian'>
             <FacebookIcon style={styles.icon} />
-          </Link>
+          </a>
         </Grid>
         <Grid item>
-          <Link href='https://www.instagram.com/__burai'>
+          <a style={styles.link} target="_blank" rel="noreferrer" href='https://www.instagram.com/__burai'>
             <InstagramIcon style={styles.icon} />
-          </Link>
+          </a>
         </Grid>
         <Grid item>
-          <Link href='https://www.linkedin.com/in/bartaliskrisztian'>
+          <a style={styles.link} target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/bartaliskrisztian'>
             <LinkedInIcon style={styles.icon} />
-          </Link>
+          </a>
         </Grid>
       </Grid>
     </Grid>

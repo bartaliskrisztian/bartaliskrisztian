@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './assets/styles/index.css';
 import App from './app';
 import reportWebVitals from './reportWebVitals';
-import { RouterProvider, createHashRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from '@emotion/react';
 import { theme } from './theme/theme';
 
@@ -11,12 +11,15 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const router = createHashRouter([
-  {
+const router = createBrowserRouter(
+  [{
     path: '/',
     element: <App />,
+  }],
+  {
+    basename: process.env.PUBLIC_URL,
   }
-]);
+);
 
 
 root.render(

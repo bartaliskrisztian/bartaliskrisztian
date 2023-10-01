@@ -33,7 +33,7 @@ export const Contact = () => (
           follow me
         </Typography>
       </Grid>
-      <Grid container pt={3} columnSpacing={1}>
+      <Grid container pt={3} columnSpacing={1} flexDirection="row">
         <Grid item>
           <a style={styles.link} target="_blank" rel="noreferrer" href='mailto:bartaliskrisztian4@gmail.com'>
             <EmailIcon style={styles.icon} />

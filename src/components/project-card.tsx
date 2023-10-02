@@ -14,6 +14,10 @@ const styles = {
     maxWidth: 300,
     height: 150,
     alignItems: 'center',
+    '&:hover': {
+      boxShadow: '4px 3px 1px 0px rgba(219,207,207,0.75)',
+      transition: 'box-shadow 0.3s ease-in-out'
+    }
   },
   image: {
     width: '100%',

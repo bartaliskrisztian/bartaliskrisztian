@@ -39,6 +39,11 @@ export const Header = () => (
             </HashLink>
           </Typography>
           <Typography sx={styles.linkWrapper}>
+            <a href="static/bartalis_krisztian_resume.pdf" target="_blank" style={styles.link}>
+              resume
+            </a>
+          </Typography>
+          <Typography sx={styles.linkWrapper}>
             <HashLink smooth to="#contact" style={styles.link}>
               contact
             </HashLink>

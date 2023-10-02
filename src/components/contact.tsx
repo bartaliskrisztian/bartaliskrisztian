@@ -33,28 +33,28 @@ export const Contact = () => (
           follow me
         </Typography>
       </Grid>
-      <Grid container pt={3} columnSpacing={1} flexDirection="row">
-        <Grid item width="fit-content">
+      <Grid pt={3} columnSpacing={1} display="flex">
+        <Grid p={1}>
           <a style={styles.link} target="_blank" rel="noreferrer" href='mailto:bartaliskrisztian4@gmail.com'>
             <EmailIcon style={styles.icon} />
           </a>
         </Grid>
-        <Grid item width="fit-content">
+        <Grid p={1}>
           <a style={styles.link} target="_blank" rel="noreferrer" href='https://github.com/bartaliskrisztian'>
             <GitHubIcon style={styles.icon} />
           </a>
         </Grid>
-        <Grid item width="fit-content">
+        <Grid p={1}>
           <a style={styles.link} target="_blank" rel="noreferrer" href='https://www.facebook.com/bartalis.krisztian'>
             <FacebookIcon style={styles.icon} />
           </a>
         </Grid>
-        <Grid item width="fit-content">
+        <Grid p={1}>
           <a style={styles.link} target="_blank" rel="noreferrer" href='https://www.instagram.com/__burai'>
             <InstagramIcon style={styles.icon} />
           </a>
         </Grid>
-        <Grid item width="fit-content">
+        <Grid p={1}>
           <a style={styles.link} target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/bartaliskrisztian'>
             <LinkedInIcon style={styles.icon} />
           </a>

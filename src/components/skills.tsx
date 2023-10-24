@@ -41,7 +41,10 @@ export const Skills = () => (
       </Typography>
       <Grid pt={2}>
         <Typography sx={{ color: 'text.primary' }}>
-          I'm a developer with a strong foundation in both front-end and back-end technologies. On the front-end, I specialize in creating captivating user interfaces using ReactJS, MUI and I'm adept at ensuring responsiveness and a seamless user experience. On the back-end, I have a deep understanding of server-side development with NodeJS and Java, utilizing frameworks like Spring to build robust, scalable applications. My expertise also extends to TypeScript for enhanced front-end development. I excel at bridging the gap between design and functionality, creating cohesive and efficient web applications.
+          I'm a developer with a strong foundation in both frontend and backend technologies.
+          <br />
+          <br />
+          On the frontend, I specialize in creating captivating user interfaces using Typescript and React ensuring responsiveness and a seamless user experience. On the other hand, I have an understanding of server-side development with NodeJS and Java, utilizing frameworks like Spring Boot to build robust, scalable applications.
         </Typography>
       </Grid>
       <Grid container pt={3} rowSpacing={2} columnSpacing={2}>

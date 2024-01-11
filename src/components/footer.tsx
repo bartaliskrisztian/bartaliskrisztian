@@ -6,7 +6,7 @@ export const Footer = () => (
   <Fade>
     <Grid pt={3}>
       <Typography sx={{ color: 'text.primary', textAlign: 'center' }}>
-        Handcrafted by me © 2023
+        Handcrafted by me © 2024
       </Typography>
     </Grid>
   </Fade>

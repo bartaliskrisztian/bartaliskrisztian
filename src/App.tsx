@@ -7,6 +7,8 @@ import { Home } from './components/home';
 import { MyWorks } from './components/my-works';
 import { Skills } from './components/skills';
 import { Footer } from './components/footer';
+import { ScrollToTop } from './components/scroll-to-top';
+import { Divider } from '@mui/material';
 
 const styles = {
   app: {
@@ -18,6 +20,11 @@ const styles = {
     flexDirection: 'column',
     margin: 'auto',
     padding: 4,
+  },
+  divider: {
+    width: '100%',
+    background: 'grey',
+    mt: 2
   }
 };
 
@@ -26,10 +33,14 @@ function App() {
     <Box className="App" sx={styles.app}>
       <Header />
       <Home />
+      <Divider sx={styles.divider} />
       <MyWorks />
+      <Divider sx={styles.divider} />
       <Skills />
+      <Divider sx={styles.divider} />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </Box>
   );
 }

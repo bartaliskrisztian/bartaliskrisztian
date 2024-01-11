@@ -17,6 +17,12 @@ import ElasticsearchLogo from "../assets/images/skills/elasticsearch.svg";
 import GrafanaLogo from "../assets/images/skills/grafana.svg";
 import IntellijLogo from "../assets/images/skills/intellij.svg";
 import MongoLogo from "../assets/images/skills/mongodb.svg";
+import Neo4JLogo from "../assets/images/skills/neo4j.svg";
+import HerokuLogo from "../assets/images/skills/heroku.svg";
+import ReduxLogo from "../assets/images/skills/redux.svg";
+import PostmanLogo from "../assets/images/skills/postman.svg";
+import SourceTreeLogo from "../assets/images/skills/sourcetree.svg";
+import AWSLogo from "../assets/images/skills/aws.svg";
 import RedisLogo from "../assets/images/skills/redis.svg";
 import StackOverflowLogo from "../assets/images/skills/stack-overflow.svg";
 import ChatGPTLogo from "../assets/images/skills/chatgpt.svg";
@@ -39,14 +45,6 @@ export const Skills = () => (
       <Typography variant="h3" sx={{ color: 'text.primary' }}>
         skills
       </Typography>
-      <Grid pt={2}>
-        <Typography sx={{ color: 'text.primary' }}>
-          I'm a developer with a strong foundation in both frontend and backend technologies.
-          <br />
-          <br />
-          On the frontend, I specialize in creating captivating user interfaces using Typescript and React ensuring responsiveness and a seamless user experience. On the other hand, I have an understanding of server-side development with NodeJS and Java, utilizing frameworks like Spring Boot to build robust, scalable applications.
-        </Typography>
-      </Grid>
       <Grid container pt={3} rowSpacing={2} columnSpacing={2}>
         <Grid item xs={4} md={2}>
           <img src={Html5Logo} alt="html5 logo" style={styles.icon} className="skill-icon" />
@@ -105,6 +103,10 @@ export const Skills = () => (
           <Typography variant="body1" sx={styles.text}>MongoDB</Typography>
         </Grid>
         <Grid item xs={4} md={2}>
+          <img src={Neo4JLogo} alt="neo4j logo" style={styles.icon} />
+          <Typography variant="body1" sx={styles.text}>Neo4J</Typography>
+        </Grid>
+        <Grid item xs={4} md={2}>
           <img src={RedisLogo} alt="redis logo" style={styles.icon} />
           <Typography variant="body1" sx={styles.text}>Redis</Typography>
         </Grid>
@@ -119,6 +121,26 @@ export const Skills = () => (
         <Grid item xs={4} md={2}>
           <img src={IntellijLogo} alt="intellij logo" style={styles.icon} />
           <Typography variant="body1" sx={styles.text}>IntellIJ</Typography>
+        </Grid>
+        <Grid item xs={4} md={2}>
+          <img src={AWSLogo} alt="aws logo" style={styles.icon} />
+          <Typography variant="body1" sx={styles.text}>AWS</Typography>
+        </Grid>
+        <Grid item xs={4} md={2}>
+          <img src={HerokuLogo} alt="heroku logo" style={styles.icon} />
+          <Typography variant="body1" sx={styles.text}>Heroku</Typography>
+        </Grid>
+        <Grid item xs={4} md={2}>
+          <img src={ReduxLogo} alt="redux logo" style={styles.icon} />
+          <Typography variant="body1" sx={styles.text}>Redux</Typography>
+        </Grid>
+        <Grid item xs={4} md={2}>
+          <img src={PostmanLogo} alt="postman logo" style={styles.icon} />
+          <Typography variant="body1" sx={styles.text}>Postman</Typography>
+        </Grid>
+        <Grid item xs={4} md={2}>
+          <img src={SourceTreeLogo} alt="sourcetree logo" style={styles.icon} />
+          <Typography variant="body1" sx={styles.text}>SourceTree</Typography>
         </Grid>
       </Grid>
       <Grid pt={3}>

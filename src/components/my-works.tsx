@@ -15,7 +15,7 @@ export const MyWorks = () => (
         Here are a few past projects I've worked on.
       </Typography>
       <Grid container pt={3} rowSpacing={2}>
-        <ProjectCard imageUrl={JohnHairImage} name="johnhair.ro" url="https://hairjohn.myshopify.com" />
+        <ProjectCard imageUrl={JohnHairImage} name="johnhair.ro" url="https://johnhair.ro" />
         <ProjectCard imageUrl={OilsPowerImage} name="oilspower.ro" url="https://oilspower.ro" />
       </Grid>
     </Grid>

@@ -48,7 +48,7 @@ export const ProjectCard = ({ imageUrl, url, name }: IProjectCard) => {
     <Grid container item sx={styles.root}>
       <img src={imageUrl} alt="" style={styles.image} />
       <Typography variant="body1" sx={{ width: '100%', textAlign: 'center' }}>
-        <Link href={url} sx={styles.button}>
+        <Link href={url} target="_blank" sx={styles.button}>
           check out
           <ArrowForwardIcon sx={styles.icon} />
           {name}

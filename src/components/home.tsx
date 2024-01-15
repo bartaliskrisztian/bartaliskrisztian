@@ -1,6 +1,7 @@
 import Grid from "@mui/material/Grid/Grid";
 import Typography from "@mui/material/Typography/Typography";
 import WavingHandIcon from '@mui/icons-material/WavingHand';
+import PlaceIcon from '@mui/icons-material/Place';
 import Image1 from '../assets/images/home/bartalis-krisztian-1.jpg';
 import Image2 from '../assets/images/home/bartalis-krisztian-2.jpg';
 import Image3 from '../assets/images/home/bartalis-krisztian-3.jpg';
@@ -20,14 +21,20 @@ const styles = {
 
 export const Home = () => (
   <Fade>
-    <Grid pt={5} width="100%" id="home">
-      <Typography variant="h3" sx={{ color: 'text.primary' }}>
-        hi, I'm Krisz
-        <WavingHandIcon sx={{ px: 1 }} />
-      </Typography>
+    <Grid pt={{ xs: 1, md: 4 }} width="100%" id="home">
+      <Grid container direction={{ xs: 'column', md: 'row' }} justifyContent="space-between">
+        <Typography variant="h3" sx={{ color: 'text.primary', pb: { xs: 2, md: 0 }, m: { xs: 'auto', md: 0 } }}>
+          hi, I'm Krisz
+          <WavingHandIcon sx={{ px: 1 }} />
+        </Typography>
+        <Typography variant="body2" sx={{ color: 'text.primary', m: { xs: 'auto', md: 0 } }}>
+          <PlaceIcon sx={{ pr: 1, verticalAlign: 'bottom' }} />
+          Budapest, Hungary
+        </Typography>
+      </Grid>
       <Grid pt={2}>
         <Typography sx={{ color: 'text.primary' }}>
-          I’m a full stack web developer and I currently work as a software engineer at Sonrisa Technologies.
+          I’m a full stack web developer with 2+ years experience and I currently work as a software engineer at Sonrisa Technologies.
           As an enthusiastic software engineer, my constant pursuit involves acquiring new knowledge and seeking
           streamlined solutions to address current problems and challenges.
         </Typography>
@@ -37,7 +44,7 @@ export const Home = () => (
           to exploring new things. I understand that mastering various programming techniques and methodologies is
           more crucial than delving into the details of specific technologies. Programming is a hobby for me, and I
           greatly enjoy it. However, it is equally important for me to work in a friendly environment where I can
-          continually improve and, at the same time.
+          continually improve.
         </Typography>
       </Grid>
       <Grid container flexDirection="row" columnSpacing={1} rowSpacing={1} pt={3}>

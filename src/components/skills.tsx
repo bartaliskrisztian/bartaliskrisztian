@@ -34,7 +34,6 @@ import NestjsLogo from "../assets/images/skills/nestjs.svg";
 import IonicLogo from "../assets/images/skills/ionic.svg";
 import DynamodbLogo from "../assets/images/skills/dynamodb.svg";
 import S3Logo from "../assets/images/skills/s3.svg";
-import RenderLogo from "../assets/images/skills/render.svg";
 import Fade from 'react-reveal/Fade';
 import { Chip, Divider } from "@mui/material";
 
@@ -233,10 +232,6 @@ export const Skills = () => (
           <Grid item xs={4} md={2}>
             <img src={HerokuLogo} alt="heroku logo" style={styles.icon} />
             <Typography variant="body1" sx={styles.text}>Heroku</Typography>
-          </Grid>
-          <Grid item xs={4} md={2}>
-            <img src={RenderLogo} alt="render logo" style={styles.icon} />
-            <Typography variant="body1" sx={styles.text}>Render</Typography>
           </Grid>
         </Grid>
       </Grid>

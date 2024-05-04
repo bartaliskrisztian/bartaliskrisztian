@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar/AppBar";
 import Box from "@mui/material/Box/Box";
 import Toolbar from "@mui/material/Toolbar/Toolbar";
 import { HashLink } from 'react-router-hash-link';
-import Fade from 'react-reveal/Fade';
 import { useWindowPosition } from "../hooks/use-window-position";
 import { useMemo } from "react";
 
@@ -38,42 +37,42 @@ export const Header = () => {
     ...(isMobileView ? {
       position: 'initial',
     } : {}),
-    backgroundColor: scrollPosition > 30 ? 'rgba(1, 1, 1, 0.9)' : 'transparent',
+    backgroundColor: scrollPosition > 30 ? 'rgba(1, 1, 1, 0.8)' : 'transparent',
   }), [isMobileView, scrollPosition]);
+  console.log({rootSx});
+  
 
   return (
-    <Fade>
-      <Box sx={rootSx}>
-        <AppBar position="static" sx={{ backgroundColor: 'inherit', pt: { xs: 0, md: 2 } }}>
-          <Toolbar variant="dense" sx={{ padding: '0 !important' }}>
-            <Typography sx={styles.linkWrapper}>
-              <HashLink smooth to="#home" style={styles.link}>
-                home
-              </HashLink>
-            </Typography>
-            <Typography sx={styles.linkWrapper}>
-              <HashLink smooth to="#work" style={styles.link}>
-                work
-              </HashLink>
-            </Typography>
-            <Typography sx={styles.linkWrapper}>
-              <HashLink smooth to="#skills" style={styles.link}>
-                skills
-              </HashLink>
-            </Typography>
-            <Typography sx={styles.linkWrapper}>
-              <a href="static/bartalis_krisztian_resume.pdf" target="_blank" style={styles.link}>
-                resume
-              </a>
-            </Typography>
-            <Typography sx={styles.linkWrapper}>
-              <HashLink smooth to="#contact" style={styles.link}>
-                contact
-              </HashLink>
-            </Typography>
-          </Toolbar>
-        </AppBar>
-      </Box>
-    </Fade>
+    <Box sx={rootSx}>
+      <AppBar position="static" sx={{ backgroundColor: 'inherit', pt: { xs: 0, md: 2 } }}>
+        <Toolbar variant="dense" sx={{ padding: '0 !important' }}>
+          <Typography sx={styles.linkWrapper}>
+            <HashLink smooth to="#home" style={styles.link}>
+              home
+            </HashLink>
+          </Typography>
+          <Typography sx={styles.linkWrapper}>
+            <HashLink smooth to="#work" style={styles.link}>
+              work
+            </HashLink>
+          </Typography>
+          <Typography sx={styles.linkWrapper}>
+            <HashLink smooth to="#skills" style={styles.link}>
+              skills
+            </HashLink>
+          </Typography>
+          <Typography sx={styles.linkWrapper}>
+            <a href="static/bartalis_krisztian_resume.pdf" target="_blank" style={styles.link}>
+              resume
+            </a>
+          </Typography>
+          <Typography sx={styles.linkWrapper}>
+            <HashLink smooth to="#contact" style={styles.link}>
+              contact
+            </HashLink>
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
 }

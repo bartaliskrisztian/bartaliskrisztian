@@ -6,7 +6,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const styles = {
   root: {
-    border: '1px solid rgba(219,207,207,0.75)',
+    border: '1px solid rgb(108 96 96)',
     borderRadius: 4,
     padding: '10px',
     margin: '10px',
@@ -15,7 +15,7 @@ const styles = {
     height: 150,
     alignItems: 'center',
     '&:hover': {
-      border: '2px solid rgba(219,207,207,0.75)',
+      border: '1px solid #fff',
       transition: 'border 0.3s ease-in-out'
     }
   },

@@ -25,7 +25,7 @@ export const Home = () => (
       <Grid container direction={{ xs: 'column', md: 'row' }} justifyContent="space-between">
         <Typography variant="h3" sx={{ color: 'text.primary', pb: { xs: 2, md: 0 }, m: { xs: 'auto', md: 0 } }}>
           hi, I'm Krisz
-          <WavingHandIcon sx={{ px: 1 }} />
+          <span className="wave">👋</span>
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.primary', m: { xs: 'auto', md: 0 } }}>
           <PlaceIcon sx={{ pr: 1, verticalAlign: 'bottom' }} />

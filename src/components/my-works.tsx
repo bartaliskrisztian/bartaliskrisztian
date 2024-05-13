@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 import { ProjectCard } from "./project-card";
 import JohnHairImage from "../assets/images/work/johnhair.avif";
 import OilsPowerImage from '../assets/images/work/oilspower.svg';
+import TherapistiImage from '../assets/images/work/therapisti.svg';
 
 export const MyWorks = () => (
   <Fade>
@@ -16,7 +17,8 @@ export const MyWorks = () => (
       </Typography>
       <Grid container pt={3} rowSpacing={2}>
         <ProjectCard imageUrl={JohnHairImage} name="johnhair.ro" url="https://johnhair.ro" />
-        <ProjectCard imageUrl={OilsPowerImage} name="oilspower.ro" url="https://oilspower.ro" />
+        <ProjectCard imageUrl={OilsPowerImage} name="oilspower.ro" url="https://oilspower.ro" disabled />
+        <ProjectCard imageUrl={TherapistiImage} name="therapisti.ro" url="https://oilspower.ro" underConstruction />
       </Grid>
     </Grid>
   </Fade>

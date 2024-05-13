@@ -46,17 +46,10 @@ const styles = {
     color: 'text.primary',
     textAlign: 'center'
   },
-  divider: {
-    "&.MuiDivider-root::before, &::after": {
-      borderColor: "#808080",
-    },
-    color: '#808080',
-    width: '80%',
-    m: 'auto',
-    py: 2
-  },
   chip: {
-    background: '#393c3f'
+    background: '#393c3f',
+    mx: 'auto',
+    my: 2,
   },
   subtitle: {
     color: 'text.primary',
@@ -72,9 +65,7 @@ export const Skills = () => (
       </Typography>
       <Grid container pt={3} rowSpacing={2} columnSpacing={2}>
         <Grid container>
-          <Divider sx={styles.divider}>
-            <Chip sx={styles.chip} label="Languages" />
-          </Divider>
+          <Chip sx={styles.chip} label="Languages" />
         </Grid>
         <Grid container item pt={3} rowSpacing={2} columnSpacing={2}>
           <Grid item xs={4} md={2}>
@@ -107,9 +98,7 @@ export const Skills = () => (
           </Grid>
         </Grid>
         <Grid container>
-          <Divider sx={styles.divider}>
-            <Chip sx={styles.chip} label="Web development" />
-          </Divider>
+          <Chip sx={styles.chip} label="Web development" />
         </Grid>
         <Grid container item pt={3} rowSpacing={2} columnSpacing={2}>
           <Grid item xs={4} md={2}>
@@ -154,9 +143,7 @@ export const Skills = () => (
           </Grid>
         </Grid>
         <Grid container>
-          <Divider sx={styles.divider}>
-            <Chip sx={styles.chip} label="Database and data management" />
-          </Divider>
+          <Chip sx={styles.chip} label="Database and data management" />
         </Grid>
         <Grid container item pt={3} rowSpacing={2} columnSpacing={2}>
           <Grid item xs={4} md={2}>
@@ -185,9 +172,7 @@ export const Skills = () => (
           </Grid>
         </Grid>
         <Grid container>
-          <Divider sx={styles.divider}>
-            <Chip sx={styles.chip} label="Version control and Development Tools" />
-          </Divider>
+          <Chip sx={styles.chip} label="Version control and Development Tools" />
         </Grid>
         <Grid container item pt={3} rowSpacing={2} columnSpacing={2}>
           <Grid item xs={4} md={2}>
@@ -220,9 +205,7 @@ export const Skills = () => (
           </Grid>
         </Grid>
         <Grid container>
-          <Divider sx={styles.divider}>
-            <Chip sx={styles.chip} label="Cloud Services" />
-          </Divider>
+          <Chip sx={styles.chip} label="Cloud Services" />
         </Grid>
         <Grid container item pt={3} rowSpacing={2} columnSpacing={2}>
           <Grid item xs={4} md={2}>

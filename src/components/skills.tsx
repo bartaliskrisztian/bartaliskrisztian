@@ -27,6 +27,7 @@ import SqlLogo from "../assets/images/skills/sql.svg";
 import PostmanLogo from "../assets/images/skills/postman.svg";
 import SourceTreeLogo from "../assets/images/skills/sourcetree.svg";
 import AWSLogo from "../assets/images/skills/aws.svg";
+import LambdaLogo from "../assets/images/skills/lambda.svg";
 import RedisLogo from "../assets/images/skills/redis.svg";
 import StackOverflowLogo from "../assets/images/skills/stack-overflow.svg";
 import ChatGPTLogo from "../assets/images/skills/chatgpt.svg";
@@ -34,8 +35,9 @@ import NestjsLogo from "../assets/images/skills/nestjs.svg";
 import IonicLogo from "../assets/images/skills/ionic.svg";
 import DynamodbLogo from "../assets/images/skills/dynamodb.svg";
 import S3Logo from "../assets/images/skills/s3.svg";
+import PHPLogo from "../assets/images/skills/php.svg";
 import Fade from 'react-reveal/Fade';
-import { Chip, Divider } from "@mui/material";
+import { Chip } from "@mui/material";
 
 const styles = {
   icon: {
@@ -49,7 +51,7 @@ const styles = {
   chip: {
     background: '#393c3f',
     mx: 'auto',
-    my: 2,
+    my: 4,
   },
   subtitle: {
     color: 'text.primary',
@@ -79,6 +81,10 @@ export const Skills = () => (
           <Grid item xs={4} md={2}>
             <img src={JavaLogo} alt="java logo" style={styles.icon} />
             <Typography variant="body1" sx={styles.text}>Java</Typography>
+          </Grid>
+          <Grid item xs={4} md={2}>
+            <img src={PHPLogo} alt="php logo" style={styles.icon} />
+            <Typography variant="body1" sx={styles.text}>PHP</Typography>
           </Grid>
           <Grid item xs={4} md={2}>
             <img src={PythonLogo} alt="python logo" style={styles.icon} />
@@ -211,6 +217,10 @@ export const Skills = () => (
           <Grid item xs={4} md={2}>
             <img src={AWSLogo} alt="aws logo" style={styles.icon} />
             <Typography variant="body1" sx={styles.text}>AWS</Typography>
+          </Grid>
+          <Grid item xs={4} md={2}>
+            <img src={LambdaLogo} alt="aws lambda" style={styles.icon} />
+            <Typography variant="body1" sx={styles.text}>AWS Lambda</Typography>
           </Grid>
           <Grid item xs={4} md={2}>
             <img src={HerokuLogo} alt="heroku logo" style={styles.icon} />

@@ -14,7 +14,7 @@ const styles = {
   app: {
     width: {
       xs: '80%',
-      md: '50%',
+      md: '60%',
     },
     display: 'flex',
     flexDirection: 'column',

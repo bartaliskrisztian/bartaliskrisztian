@@ -9,6 +9,7 @@ import Image5 from '../assets/images/home/bp.jpg';
 import Image6 from '../assets/images/home/workspace.jpg';
 import Fade from 'react-reveal/Fade';
 import { useCallback } from "react";
+import { Link } from "@mui/material";
 
 const styles = {
   image: {
@@ -22,6 +23,10 @@ const styles = {
     '-moz-transition': 'all 0.75s ease',
     '-ms-transition': 'all 0.75s ease',
     '-o-transition': 'all 0.75s ease',
+  },
+  link: {
+    textDecoration: 'none',
+    color: "#85c467"
   }
 } as any;
 
@@ -43,7 +48,7 @@ export const Home = () => {
         </Grid>
         <Grid pt={2}>
           <Typography sx={{ color: 'text.primary' }}>
-            I’m a full stack web developer with almost 3 years experience and I currently work as a software engineer at Sonrisa Technologies.
+            I’m a full stack web developer with 3 years experience and I currently work as a software engineer at <Link sx={styles.link} target="_blank" href="https://www.sonrisa.hu/">Sonrisa Technologies</Link>.
             As an enthusiastic software engineer, my constant pursuit involves acquiring new knowledge and seeking
             streamlined solutions to address current problems and challenges.
           </Typography>
@@ -51,7 +56,10 @@ export const Home = () => {
             I very much enjoy working on both the front-end and back-end development. I find it important to maintain
             a balance between these two areas. I typically work with the technologies listed below, but I am always open
             to exploring new things. I understand that mastering various programming techniques and methodologies is
-            more crucial than delving into the details of specific technologies. Programming is a hobby for me, and I
+            more crucial than delving into the details of specific technologies.
+          </Typography>
+          <Typography sx={{ color: 'text.primary', pt: 1 }}>
+            Programming is a also hobby for me, and I
             greatly enjoy it. However, it is equally important for me to work in a friendly environment where I can
             continually improve.
           </Typography>

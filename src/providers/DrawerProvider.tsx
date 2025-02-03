@@ -3,8 +3,7 @@ import { SwipeableDrawer } from '@mui/material';
 
 const styles = ({
   drawer: {
-    width: { xs: '70%', md: '70%', lg: '30%' },
-    padding: '30px',
+    width: { xs: '85%', md: '70%', lg: '30%' },
     maxWidth: '400px',
     background: "#000",
     borderLeft: '1px solid #707070'

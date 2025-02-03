@@ -58,7 +58,7 @@ export const ProjectDrawer = ({ description, techStack, duration, image, url }: 
   const { onImageLoad } = useImageLoading();
 
   return (
-    <Grid container flexDirection="column">
+    <Grid container flexDirection="column" padding="30px">
       <Grid item sx={styles.imageWrapper}>
         <Box
           component="img"

@@ -142,17 +142,6 @@ export const ProjectCard = ({
           </div>
         </ClickAwayListener>
       </Box>
-      <Box sx={styles.tooltip}>
-        {disabled && (
-          <DoDisturbIcon sx={{ color: '#da0c0c' }} />
-        )}
-        {underConstruction && (
-          <ConstructionIcon sx={{ color: '#d08e36' }} />
-        )}
-        {!isPublic && (
-          <ShieldIcon sx={{ color: '#fff' }} />
-        )}
-      </Box>
     </Grid>
   );
 }

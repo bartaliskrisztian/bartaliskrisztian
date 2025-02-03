@@ -13,7 +13,7 @@ export const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: 'SpaceGrotesk -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+    fontFamily: 'SpaceGrotesk, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
     fontSize: 14,
   },
   components: {

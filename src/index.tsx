@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from '@emotion/react';
 import { theme } from './theme/theme';
+import { DrawerProvider } from './providers/DrawerProvider';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -25,7 +26,9 @@ const router = createBrowserRouter(
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <RouterProvider router={router} />
+      <DrawerProvider>
+        <RouterProvider router={router} />
+      </DrawerProvider>
     </ThemeProvider>
   </React.StrictMode>
 );

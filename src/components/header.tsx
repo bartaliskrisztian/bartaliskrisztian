@@ -1,8 +1,7 @@
-import { Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Typography, useMediaQuery, useTheme, Link } from "@mui/material";
 import AppBar from "@mui/material/AppBar/AppBar";
 import Box from "@mui/material/Box/Box";
 import Toolbar from "@mui/material/Toolbar/Toolbar";
-import { HashLink } from 'react-router-hash-link';
 import { useWindowPosition } from "../hooks/use-window-position";
 import { useMemo } from "react";
 
@@ -22,8 +21,9 @@ const styles = {
   link: {
     color: '#fff',
     textDecoration: 'none',
+    transition: 'all 300ms ease-in-out',
     '&:hover': {
-      color: '#779393'
+      color: '#856a6a'
     } 
   }
 };
@@ -47,29 +47,29 @@ export const Header = () => {
       <AppBar position="static" sx={{ backgroundColor: 'inherit', pt: { xs: 0, md: 2 } }}>
         <Toolbar variant="dense" sx={{ padding: '0 !important' }}>
           <Typography sx={styles.linkWrapper}>
-            <HashLink smooth to="#home" style={styles.link}>
+            <Link href="#home" sx={styles.link}>
               home
-            </HashLink>
+            </Link>
           </Typography>
           <Typography sx={styles.linkWrapper}>
-            <HashLink smooth to="#work" style={styles.link}>
+            <Link href="#work" sx={styles.link}>
               work
-            </HashLink>
+            </Link>
           </Typography>
           <Typography sx={styles.linkWrapper}>
-            <HashLink smooth to="#skills" style={styles.link}>
+            <Link href="#skills" sx={styles.link}>
               skills
-            </HashLink>
+            </Link>
           </Typography>
           <Typography sx={styles.linkWrapper}>
-            <a href="static/bartalis_krisztian_resume.pdf" target="_blank" style={styles.link}>
+            <Link href="static/bartalis_krisztian_resume.pdf" target="_blank" sx={styles.link}>
               resume
-            </a>
+            </Link>
           </Typography>
           <Typography sx={styles.linkWrapper}>
-            <HashLink smooth to="#contact" style={styles.link}>
+            <Link href="#contact" sx={styles.link}>
               contact
-            </HashLink>
+            </Link>
           </Typography>
         </Toolbar>
       </AppBar>

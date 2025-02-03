@@ -5,11 +5,11 @@ import Image1 from '../assets/images/home/bartalis-krisztian-1.jpg';
 import Image2 from '../assets/images/home/bartalis-krisztian-2.jpg';
 import Image3 from '../assets/images/home/bartalis-krisztian-3.jpg';
 import Image4 from '../assets/images/home/alex.jpg';
-import Image5 from '../assets/images/home/bp.jpg';
+import Image5 from '../assets/images/home/bartalis-krisztian-4.jpg';
 import Image6 from '../assets/images/home/workspace.jpg';
 import Fade from 'react-reveal/Fade';
-import { useCallback } from "react";
 import { Link } from "@mui/material";
+import useImageLoading from "../hooks/use-image-loading";
 
 const styles = {
   image: {
@@ -31,7 +31,7 @@ const styles = {
 } as any;
 
 export const Home = () => {
-  const onImageLoad = useCallback((event: any) => event.currentTarget.style.opacity = 1, []);
+  const { onImageLoad } = useImageLoading();
 
   return (
     <Fade>
@@ -47,21 +47,35 @@ export const Home = () => {
           </Typography>
         </Grid>
         <Grid pt={2}>
-          <Typography sx={{ color: 'text.primary' }}>
+          <Typography sx={{ color: '#8d8d8d' }}>
             I’m a full stack web developer with 3 years experience and I currently work as a software engineer at <Link sx={styles.link} target="_blank" href="https://www.sonrisa.hu/">Sonrisa Technologies</Link>.
             As an enthusiastic software engineer, my constant pursuit involves acquiring new knowledge and seeking
             streamlined solutions to address current problems and challenges.
           </Typography>
-          <Typography sx={{ color: 'text.primary', pt: 1 }}>
+          <Typography sx={{ color: '#8d8d8d', pt: 1 }}>
             I very much enjoy working on both the front-end and back-end development. I find it important to maintain
             a balance between these two areas. I typically work with the technologies listed below, but I am always open
             to exploring new things. I understand that mastering various programming techniques and methodologies is
             more crucial than delving into the details of specific technologies.
           </Typography>
-          <Typography sx={{ color: 'text.primary', pt: 1 }}>
+          <Typography sx={{ color: '#8d8d8d', pt: 1 }}>
             Programming is a also hobby for me, and I
             greatly enjoy it. However, it is equally important for me to work in a friendly environment where I can
             continually improve.
+          </Typography>
+        </Grid>
+        <Typography pt={3} variant="h3" sx={{ color: 'text.primary' }}>
+          a bit about me
+        </Typography>
+        <Grid container pt={2} flexDirection="column" rowGap="12px">
+          <Typography sx={{ color: '#8d8d8d' }} variant="body2">
+            Just a guy trying to squeeze every drop out of life. Whether it's a side project, a pet experiment, or just diving into something new, there's always something brewing in my world. If only the day had more than 24 hours—then maybe I’d have enough time to build cool stuff, stay in shape, and nurture my relationships.
+          </Typography >
+          <Typography sx={{ color: '#8d8d8d' }} variant="body2">
+            Balancing all these passions is a challenge, but that’s what keeps life exciting. I thrive on self-improvement, pushing limits, and making every moment count. My interests? Personal growth, self-discipline, craft beer, and MMA. I play football, hike, hit the gym whenever I can, and enjoy fishing when I need a reset.
+          </Typography >
+          <Typography sx={{ color: '#8d8d8d' }} variant="body2">
+            And of course, life wouldn’t be the same without my crew—an amazing bunch of friends who make every hangout legendary.
           </Typography>
         </Grid>
         <Grid container flexDirection="row" columnSpacing={1} rowSpacing={1} pt={3}>

@@ -29,7 +29,7 @@ export const Contact = () => (
         contact
       </Typography>
       <Grid pt={2}>
-        <Typography sx={{ color: 'text.primary' }}>
+        <Typography sx={{ color: '#8d8d8d' }}>
           follow me
         </Typography>
       </Grid>
